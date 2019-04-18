@@ -1,0 +1,11 @@
+<view class="c-minheight wx-view_GdmP7P" data-c_e_id="wx_view_4eb5f2d5" >
+    <input class="c-block c-fullwidth wx-input_PDr7gZ" data-c_e_id="wx_input_79fdd997" name="input1" bindinput='inputChange' placeholder="please input search key" type="text"/>
+    <image class="wx-image_FJvtMB" data-c_e_id="wx_image_d80cabdb" mode="scaleToFill" src="http://qty83k.creatby.com/materials/13532/origin/80ee8d1e2de043d02f3a469cfdc6f372_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/13532/origin/80ee8d1e2de043d02f3a469cfdc6f372_origin.png);" bindtap="search_func"/>
+</view>
+<scroll-view class="c-minheight wx-scroll-view_UNwVjY" data-c_e_id="wx_scroll_view_6e604c3b" lower-threshold="50" scroll-y="True" style="overflow-x: hidden; overflow-y: auto;" upper-threshold="50">
+  <block wx:for="{{results}}">
+    <view class="c-minheight wx-view_9B1vud" data-c_e_id="wx_view_42323282" data-ctid="{{item.ctid}}" data-lid="{{item.lid}}" bindtap="goToDetail">
+        <text class="c-block wx-text_q2ls9F" data-c_e_id="wx_text_4f16b5f6">{{item.title}}</text>
+    </view>
+  </block>
+</scroll-view>

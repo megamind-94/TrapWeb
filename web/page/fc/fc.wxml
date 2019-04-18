@@ -1,0 +1,32 @@
+<scroll-view scroll-y="true" style='height:92%'>
+<view class="c-minheight wx-view_tCBVkW" data-c_e_id="wx_view_ce8c3775">
+    <image class="wx-image_jJeYQv" data-c_e_id="wx_image_479cd562" mode="scaleToFill" src="{{image}}" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url({{image}});"/>
+</view>
+<view class="c-minheight wx-view_KBkoH4" data-c_e_id="wx_view_cc8588d5">
+    <text class="c-block wx-text_itYPZG" data-c_e_id="wx_text_5b0ec1fe">{{title}}</text>
+    <block wx:if="{{!is_keep}}"><image class="wx-image_iEzstA1" data-c_act_id="M_3415d61e41c36d11|M_8eca09faed6fa2ec" data-c_e_id="wx_image_d5bab842"    data-keepno="0"  mode="scaleToFill" src="../image/shoucan.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(../image/shoucan.png); "  bindtap="changeKeep" /></block>
+          <block wx:if="{{is_keep}}"><image class="wx-image_Ls9C4R1 " data-c_act_id="M_0c241ccb1e45a2e1|M_604b13410a7f58a0" data-c_e_id="wx_image_9fa0ce72" mode="scaleToFill" data-keepno="1" src="../image/yishoucan.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(../image/yishoucan.png); " bindtap="changeKeep"/></block>
+    <textarea class="c-block wx-text_lb52Vm" data-c_e_id="wx_text_137ba629">地址：{{addr}}</textarea>
+</view>
+<view class="wx-text-tupian">
+<text class="wx-text_lb52Vm1">图文详情</text></view>
+<view class="c-minheight" data-c_e_id="wx_view_a38334ef" style="text-align:center">
+<image class="wx-image_jJeYQv-one" mode="widthFix" src="{{content}}" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url({{content}});"/>
+</view>
+
+<view class="wx-text-pinlun">
+<text class="wx-text_lb52Vm2" style='margin-bottom:20px'>评论</text></view>
+<view class="c-minheight wx-view_P0r568" data-c_e_id="wx_view_b7ccf59a" wx:for="{{comments}}">
+  <view class="c-minheight wx-view_U5TMcl" data-c_e_id="wx_view_14a9824e">
+      <image class="wx-image_kHW4tu" data-c_e_id="wx_image_a294537a" mode="scaleToFill" src="{{item.face}}" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url({{item.face}});"/>
+      <view class="c-minheight wx-view_a1Bie6" data-c_e_id="wx_view_99618988">
+          <text class="c-block wx-text_3KyOTR" data-c_e_id="wx_text_8c0bce5f">{{item.name}}</text>
+          <textarea class="c-block c-fullwidth wx-textarea_3KDYhL" data-c_e_id="wx_textarea_ecef4161" name="textarea1" type="textarea">{{item.text}}</textarea>
+      </view>
+  </view>
+</view>
+</scroll-view>
+<view class="c-minheight wx-view_1vtwuK" data-c_e_id="wx_view_6be079b0">
+    <input class="c-block c-fullwidth wx-input_7nSBMy" data-c_e_id="wx_input_f9a92fcd" name="input1" placeholder="欢迎你的评论" type="text" bindinput="inputChange"/>
+    <image class="wx-image_v8WFeQ" data-c_e_id="wx_image_476b0a93" mode="scaleToFill" src="../image/fabu.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(../image/fabu.png); " bindtap='addComment'/>
+</view>

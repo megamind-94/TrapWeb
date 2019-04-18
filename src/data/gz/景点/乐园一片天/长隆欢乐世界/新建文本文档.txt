@@ -1,0 +1,2 @@
+data/gz/景点/乐园一片天/长隆欢乐世界/cover.png
+data/gz/景点/乐园一片天/长隆欢乐世界/content.png

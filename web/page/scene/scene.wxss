@@ -1,0 +1,6 @@
+/* page/scene/scene.wxss */
+.active{
+  color: #7ebcfa;
+  border-bottom-color: #7ebcfa;
+  border-bottom-style: solid;
+}

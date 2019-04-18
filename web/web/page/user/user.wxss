@@ -1,0 +1,6 @@
+/* page/user/user.wxss */
+.active{
+  color: blue;
+  border-bottom-color: blue;
+  border-bottom-style: solid;
+}

@@ -1,0 +1,29 @@
+<scroll-view scroll-y="true" style='height:92%'>
+<view class="c-minheight wx-view_tCBVkW" data-c_e_id="wx_view_ce8c3775">
+    <image class="wx-image_jJeYQv" data-c_e_id="wx_image_479cd562" mode="scaleToFill" src="{{image}}" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url({{image}});"/>
+</view>
+<view class="c-minheight wx-view_KBkoH4" data-c_e_id="wx_view_cc8588d5">
+    <text class="c-block wx-text_itYPZG" data-c_e_id="wx_text_5b0ec1fe">{{title}}</text>
+    <block wx:if="{{!is_keep}}"><image class="wx-image_iEzstA" data-c_act_id="M_3415d61e41c36d11|M_8eca09faed6fa2ec" data-c_e_id="wx_image_d5bab842"    data-keepno="0"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/13532/origin/3e951d63075bfe443832779b956be7e0_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/13532/origin/3e951d63075bfe443832779b956be7e0_origin.png); "  bindtap="changeKeep" /></block>
+          <block wx:if="{{is_keep}}"><image class="wx-image_Ls9C4R " data-c_act_id="M_0c241ccb1e45a2e1|M_604b13410a7f58a0" data-c_e_id="wx_image_9fa0ce72" mode="scaleToFill" data-keepno="1" src="http://qty83k.creatby.com/materials/13532/origin/1b4c6db2a32b5e95dc2bacbdbfb88ec5_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/13532/origin/1b4c6db2a32b5e95dc2bacbdbfb88ec5_origin.png); " bindtap="changeKeep"/></block>
+    <text class="c-block wx-text_lb52Vm" data-c_e_id="wx_text_137ba629">地址：{{addr}}</text>
+</view>
+<text class="wx-text_lb52Vm">图文详情</text>
+<view class="c-minheight" data-c_e_id="wx_view_a38334ef" style="text-align:center">
+<image class="wx-image_jJeYQv1" mode="widthFix" src="{{content}}" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url({{content}});"/>
+</view>
+<text class='wx-text_lb52Vm' style='margin-bottom:20px'>评论</text>
+<view class="c-minheight wx-view_P0r568" data-c_e_id="wx_view_b7ccf59a" wx:for="{{comments}}">
+  <view class="c-minheight wx-view_U5TMcl" data-c_e_id="wx_view_14a9824e">
+      <image class="wx-image_kHW4tu" data-c_e_id="wx_image_a294537a" mode="scaleToFill" src="{{item.face}}" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url({{item.face}});"/>
+      <view class="c-minheight wx-view_a1Bie6" data-c_e_id="wx_view_99618988">
+          <text class="c-block wx-text_3KyOTR" data-c_e_id="wx_text_8c0bce5f">{{item.name}}</text>
+          <textarea class="c-block c-fullwidth wx-textarea_3KDYhL" data-c_e_id="wx_textarea_ecef4161" name="textarea1" type="textarea">{{item.text}}</textarea>
+      </view>
+  </view>
+</view>
+</scroll-view>
+<view class="c-minheight wx-view_1vtwuK" data-c_e_id="wx_view_6be079b0">
+    <input class="c-block c-fullwidth wx-input_7nSBMy" data-c_e_id="wx_input_f9a92fcd" name="input1" placeholder="This is a input" type="text"/>
+    <image class="wx-image_v8WFeQ" data-c_e_id="wx_image_476b0a93" mode="scaleToFill" src="http://qty83k.creatby.com/materials/13532/origin/9ac3d4a7ff94ca2a90b57d63dfe569b0_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/13532/origin/9ac3d4a7ff94ca2a90b57d63dfe569b0_origin.png); "/>
+</view>

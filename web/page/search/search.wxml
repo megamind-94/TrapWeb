@@ -1,0 +1,26 @@
+<view class="c-minheight wx-view_GdmP7P" data-c_e_id="wx_view_4eb5f2d5"
+
+>
+<view class="wx-view-one">
+<text class="wx-view-text">定位：广州</text></view>
+    <input class="c-block c-fullwidth wx-input_PDr7gZ" data-c_e_id="wx_input_79fdd997" name="input1" bindinput='inputChange' placeholder="请输入地方名" type="text"/>
+    <image class="wx-image_FJvtMB" data-c_e_id="wx_image_d80cabdb" mode="scaleToFill" src="../image/sousuo2.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(../image/sousuo2.png);" bindtap="search_func"/>
+</view>
+<scroll-view class="c-minheight wx-scroll-view_UNwVjY" data-c_e_id="wx_scroll_view_6e604c3b" lower-threshold="50" scroll-y="True" style="overflow-x: hidden; overflow-y: auto;" upper-threshold="50">
+  <block wx:for="{{results}}">
+    <view class="c-minheight wx-view_9B1vud" data-c_e_id="wx_view_42323282" data-ctid="{{item.ctid}}" data-lid="{{item.lid}}" bindtap="goToDetail">
+        <text class="c-block wx-text_q2ls9F" data-c_e_id="wx_text_4f16b5f6">{{item.title}}</text>
+    </view>
+    
+  </block>
+  <view class="view-one"  >
+  <text class="view-one-text">欣赏</text>
+  <view class="view-one-image">
+ <image  class="view-one-image1"src="../image/jingdian1.png  " style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(../image/jingdian1.png);" ></image>
+ <image  class="view-one-image2" src="../image/jingdian2.png  " style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(../image/jingdian2.png);" ></image>
+  <image  class="view-one-image1"src="../image/jingdian3.png  " style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(../image/jingdian3.png);" ></image>
+   <image  class="view-one-image2" src="../image/jingdian4.png  " style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(../image/jingdian4.png);" ></image>
+ </view>
+  
+  </view>
+</scroll-view>

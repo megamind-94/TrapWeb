@@ -1,0 +1,14 @@
+[19-02-25 14:39:34][ERROR]:sql÷¥–– ß∞‹: SELECT * FROM contents WHERE t and i and t and l and e and   and l and i and k and e and   and ' and s and d and s and '  
+[19-02-25 14:39:34][ERROR]:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and l and i and k and e and   and ' and s and d and s and '' at line 1") 
+[19-02-25 14:39:38][ERROR]:sql÷¥–– ß∞‹: SELECT * FROM contents WHERE t and i and t and l and e and   and l and i and k and e and   and ' and s and d and s and '  
+[19-02-25 14:39:38][ERROR]:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and l and i and k and e and   and ' and s and d and s and '' at line 1") 
+[19-02-25 14:39:39][ERROR]:sql÷¥–– ß∞‹: SELECT * FROM contents WHERE t and i and t and l and e and   and l and i and k and e and   and ' and s and d and s and '  
+[19-02-25 14:39:39][ERROR]:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and l and i and k and e and   and ' and s and d and s and '' at line 1") 
+[19-02-25 14:39:40][ERROR]:sql÷¥–– ß∞‹: SELECT * FROM contents WHERE t and i and t and l and e and   and l and i and k and e and   and ' and s and d and s and '  
+[19-02-25 14:39:40][ERROR]:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and l and i and k and e and   and ' and s and d and s and '' at line 1") 
+[19-02-25 14:40:54][ERROR]:sql÷¥–– ß∞‹: SELECT * FROM contents WHERE t and i and t and l and e and   and l and i and k and e and   and ' and s and d and s and '  
+[19-02-25 14:40:54][ERROR]:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and l and i and k and e and   and ' and s and d and s and '' at line 1") 
+[19-02-25 14:41:07][ERROR]:sql÷¥–– ß∞‹: SELECT * FROM contents WHERE t and i and t and l and e and   and l and i and k and e and   and ' and d and a and f and '  
+[19-02-25 14:41:07][ERROR]:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and l and i and k and e and   and ' and d and a and f and '' at line 1") 
+[19-02-25 14:41:24][ERROR]:sql÷¥–– ß∞‹: SELECT * FROM contents WHERE t and i and t and l and e and   and l and i and k and e and   and ' and d and f and a and s and '  
+[19-02-25 14:41:24][ERROR]:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and l and i and k and e and   and ' and d and f and a and s and '' at line 1") 

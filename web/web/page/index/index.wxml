@@ -1,0 +1,30 @@
+<view class="c-minheight wx-view_bf0iwf" data-c_e_id="wx_view_455f08cc">
+    <image bindtap="go_to_search" class="wx-image_llLuxx" data-c_act_id="M_9089fd9333f9c8fc" data-c_e_id="wx_image_75b12a19" mode="scaleToFill" src="http://qty83k.creatby.com/materials/13532/origin/80ee8d1e2de043d02f3a469cfdc6f372_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/13532/origin/80ee8d1e2de043d02f3a469cfdc6f372_origin.png); "/>
+    <text class="c-block wx-text_eYrtZk" data-c_e_id="wx_text_13234e3f" bindtap="getLocation">定位：{{location}}</text>
+    <image bindtap='go_to_user' class="wx-image_vMt8X8" data-c_act_id="M_bb03dec581dc82ca" data-c_e_id="wx_image_49f381cd" mode="scaleToFill" src="http://qty83k.creatby.com/materials/13532/origin/58851c1bc6c7c8b067e94e602afd7b62_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/13532/origin/58851c1bc6c7c8b067e94e602afd7b62_origin.png); "/>
+</view>
+<view class="c-minheight wx-view_injTJL" data-c_e_id="wx_view_9aa33b16" >
+    <view class="c-minheight wx-view_uOyhRb" data-c_e_id="wx_view_04b31535" data-lid="2" bindtap="change_label">
+        <image class="wx-image_S9hwdU" data-c_act_id="M_9f944d7158751594" data-c_e_id="wx_image_2ae0459c" mode="aspectFill" src="http://qty83k.creatby.com/materials/13532/origin/242c24c577a3048b64d9aad0c18e2c32_origin.png" style="background-size:  cover; background-position:  center center; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/13532/origin/242c24c577a3048b64d9aad0c18e2c32_origin.png); "/>
+        <text class="c-block wx-text_id2zM9" data-c_e_id="wx_text_647e1903" >景点</text>
+    </view>
+    <view class="c-minheight wx-view_uOyhRb" data-c_e_id="wx_viewd0153ae9" data-lid="1" bindtap="change_label">
+        <image class="wx-image_S9hwdU" data-c_e_id="wx_imagecfd95557" mode="scaleToFill" src="http://qty83k.creatby.com/materials/13532/origin/8eb0b8991ce68bd8ef5b37da8635a92d_origin.png" style="background-size:    100% 100%; background-position:    0% 0%; background-repeat:    no-repeat; background-image: url(http://qty83k.creatby.com/materials/13532/origin/8eb0b8991ce68bd8ef5b37da8635a92d_origin.png); "/>
+        <text class="c-block wx-text_id2zM9" data-c_e_id="wx_textd12848d0" >美食</text>
+    </view>
+    <view class="c-minheight wx-view_uOyhRb" data-c_e_id="wx_viewa77e3940" data-lid="3" bindtap="change_label">
+        <image class="wx-image_S9hwdU" data-c_e_id="wx_image72168dbd" mode="scaleToFill" src="../image/WENHUA.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(../image/WENHUA.png); "/>
+        <text class="c-block wx-text_id2zM9" data-c_e_id="wx_text8573e0be" >文化</text>
+    </view>
+</view>
+<scroll-view class="c-minheight wx-scroll-view_L7KOuE" data-c_e_id="wx_scroll_view_dc732fe8" lower-threshold="50" scroll-y="True" style="overflow-x: hidden; overflow-y: auto;" upper-threshold="50" >
+  <block wx:for="{{lists}}">
+    <view class="c-minheight wx-view_tmgGeI" data-c_e_id="wx_view_8e5f959e">
+        <view class="c-minheight wx-view_q9Mcm0" data-c_e_id="wx_view_23d90758">
+            <text class="c-block wx-text_Cg0Bl2" data-c_e_id="wx_text_c0edaeac">{{item.tagname}}</text>
+            <text class="c-block wx-text_h5aUJt" data-c_act_id="M_c3a8a45ed01b46a5" data-c_e_id="wx_text_bdc8ea4f" data-tid="{{item.tid}}" data-lid="{{item.lid}}" bindtap="goToMore">更多</text>
+        </view>
+        <image class="wx-image_VbcNXC" data-c_act_id="M_e7cd9c9ef299444e|M_142dfdcdbe9d63fa" data-c_e_id="wx_image_21ae1f0e" data-ctid="{{item.ctid}}" mode="scaleToFill" data-lid="{{item.lid}}" bindtap="goToDetail" src="{{item.coverid}}" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url({{item.coverid}}); "/>
+    </view>
+  </block>
+</scroll-view>

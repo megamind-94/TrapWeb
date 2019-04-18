@@ -1,0 +1,15 @@
+<view class="c-minheight wx-view_hetn4b" data-c_e_id="wx_view_62405df8">
+    <image class="wx-image_hNBOIF" data-c_e_id="wx_image_59c58a05" mode="scaleToFill" src="{{face}}" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url({{face}});"/>
+    <text class="c-block wx-text_fIh7dk" data-c_e_id="wx_text_17ad0c4e">{{nickname}}</text>
+</view>
+<view class="c-minheight wx-view_cQPYeI" data-c_e_id="wx_view_70c90dd5">
+    <text class="c-block wx-text_nrCvVs {{currentTab==0?'active':''}}" data-c_e_id="wx_text_776df532" data-current_tab="0" bindtap='changeTab'>浏览记录</text>
+    <text class="c-block wx-text_P8rzIG {{currentTab==1?'active':''}}" data-c_e_id="wx_text_5e3baf84" data-current_tab="1" bindtap='changeTab'>收藏记录</text>
+</view>
+<scroll-view class="c-minheight wx-scroll-view_WY7MiL" data-c_e_id="wx_scroll_view_c531edac" lower-threshold="50" scroll-y="True" style="overflow-x: hidden; overflow-y: auto; " upper-threshold="50">
+  <block wx:for="{{results}}">
+    <view class="c-minheight wx-view_s3YErq" data-c_e_id="wx_view_e969545d" bindtap='goToDetail' data-ctid="{{item.ctid}}" data-lid="{{item.lid}}">
+      <text>{{item.title}}</text>
+    </view>
+  </block>
+</scroll-view>

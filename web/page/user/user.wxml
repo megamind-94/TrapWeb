@@ -1,0 +1,55 @@
+<scroll-view scroll-y="True" >
+<view class="c-minheight wx-view_hetn4b" data-c_e_id="wx_view_62405df8"
+src="../image/1.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(../image/1.png);"
+>
+<text class="wx-view_hetn4b-text">尊敬的用户</text>
+    <image class="wx-image_hNBOIF" data-c_e_id="wx_image_59c58a05" mode="scaleToFill" src="{{face}}" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url({{face}});"/>
+    <text class="c-block wx-text_fIh7dk" data-c_e_id="wx_text_17ad0c4e">{{nickname}}</text>
+</view>
+<view class="c-minheight wx-view_cQPYeI" data-c_e_id="wx_view_70c90dd5">
+<view  class="wx-text_nrCvVs-one">
+<image  class="wx-text_nrCvVs-image"src="../image/liulanjilu.png" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(../image/liulanjilu.png);"></image>
+    <text class="c-block wx-text_nrCvVs {{currentTab==0?'active':''}}" data-c_e_id="wx_text_776df532" data-current_tab="0" bindtap='changeTab'>浏览记录</text>
+    </view>
+    <view class="wx-text_P8rzIG-one">
+    <image  class="wx-text_P8rzIG-image"src="../image/SC.png" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(../image/SC.png);"></image>
+    <text class="c-block wx-text_P8rzIG {{currentTab==1?'active':''}}" data-c_e_id="wx_text_5e3baf84" data-current_tab="1" bindtap='changeTab'>收藏记录</text>
+    </view>
+     <view class="wx-text_P8rzIG-one">
+    <image  class="wx-text_P8rzIG-image1"src="../image/dianpin.png" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(../image/dianpin.png);"></image>
+    <text class="c-block wx-text_P8rzIG {{currentTab==1?'active':''}}" data-c_e_id="wx_text_5e3baf84" data-current_tab="1" bindtap='changeTab'>评论记录</text>
+    </view>
+</view>
+
+  <block wx:for="{{results}}">
+    <view class="c-minheight wx-view_s3YErq" data-c_e_id="wx_view_e969545d" bindtap='goToDetail' data-ctid="{{item.ctid}}" data-lid="{{item.lid}}">
+      <text>{{item.title}}</text>
+    </view>
+    
+  </block>
+
+<view class="wx-view_s3YErq-one" >
+  <!-- <view class="wx-view_s3YErq-one-text1" >
+  <text class="wx-view_s3YErq-one-text">账户信息</text>
+  </view> -->
+  
+  <view class="wx-view_s3YErq-one-text1" >
+   <text class="wx-view_s3YErq-one-text">帮助中心</text> </view>
+     <!-- <view class="wx-view_s3YErq-one-text1" >
+   <text class="wx-view_s3YErq-one-text">我的消息</text>
+   </view> -->
+    <view class="wx-view_s3YErq-one-text1" >
+   <text class="wx-view_s3YErq-one-text">意见反馈</text>
+   </view>
+    <view class="wx-view_s3YErq-one-text1" >
+   <text class="wx-view_s3YErq-one-text">商务合作</text>
+   </view>
+   </view>
+
+
+
+
+
+  </scroll-view>
+
+  

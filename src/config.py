@@ -1,0 +1,5 @@
+LOG_DIR = "log"
+username = "root"
+passwd = "root"
+dbbase = "trab_web"
+hostname = "http://localhost:5000/"

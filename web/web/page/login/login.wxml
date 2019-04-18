@@ -1,0 +1,8 @@
+<view class="c-minheight wx-view_VwAR6A" data-c_e_id="wx_view_08495777">
+    <image class="wx-image_0HKTx1" data-c_e_id="wx_image_e8331734" mode="scaleToFill" src="//o3bnyc.creatby.com/diazo/images/image-placeholder.svg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg);"/>
+    <text class="c-block wx-text_k5jJPG" data-c_e_id="wx_text_f54babf0">申请获取以下权限</text>
+    <text class="c-block wx-text_KL9EMl" data-c_e_id="wx_text_2e855acb">获得你的公开信息（昵称，头像等）</text>
+    <button class="wx-button_S5ETPP" data-c_e_id="wx_button_86f90e7f" hover-class="button-hover" size="default" type="private" open-type="getUserInfo" bindgetuserinfo="getUserScope">
+        授权登录
+    </button>
+</view>

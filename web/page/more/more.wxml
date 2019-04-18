@@ -1,0 +1,10 @@
+<!-- <view class="c-minheight wx-view_MbfvR5" data-c_e_id="wx_view_c9cbdd35">
+    <text class="c-block wx-text_MTJkaA" data-c_e_id="wx_text_0005278d">{{label}}</text>
+    <image catchtap="tap_adfdcf9c" class="wx-image_q4UpxR" data-c_act_id="M_5ace4a8847f41b65" data-c_e_id="wx_image_069e79a5" mode="scaleToFill" src="http://qty83k.creatby.com/materials/13532/origin/29260e7e0c84278aa1ce066c5b0d6339_origin.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/13532/origin/29260e7e0c84278aa1ce066c5b0d6339_origin.png); "/>
+</view> -->
+<scroll-view class="c-minheight wx-scroll-view_h7fpnw" data-c_e_id="wx_scroll_view_f7934286" lower-threshold="50" scroll-y="True" style="overflow-x: hidden; overflow-y: auto;" upper-threshold="50" wx:for="{{lists}}">
+    <view class="c-minheight wx-view_09TQWs"  data-ctid='{{item.ctid}}' data-lid='{{item.lid}}' bindtap='goToDetail' >
+        <!-- <text>{{item.title}}</text> -->
+        <image class="wx-image_FcOWDZ" mode="scaleToFill" src="{{item.coverid}}" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url({{item.coverid}});"/>
+    </view>
+</scroll-view>
